@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*,::after,::before{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --DM-sans-font:'DM Sans', sans-serif;
+    --soft-red:hsl(10, 79%, 65%);
+    --cyan:hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown:hsl(28, 10%, 53%);
+    --cream:hsl(27, 66%, 92%);
+    --very-pale-orange:hsl(10, 100%, 76%);
+    --font-size:18px;
+    --font-weight-400:400;
+    --font-weight-700:700;
+}
+body{
+    background-color: var(--cream);
+}
+.top-header{
+    width: 538px;
+    height: 124px;
+    background-color: var(--soft-red);
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--DM-sans-font);
+    box-sizing: border-box;
+    padding: 33px;
+}
+.txt-balance{
+    display:flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.container-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    box-sizing:content-box;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.graph-body{
+    width: 540px;
+    height: 511px;
+    background-color: white;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 40px;
+    justify-content: space-between;
+}
+.top-text-header{
+    font-family: var(--DM-sans-font);
+    color: var(--dark-brown);
+}
+.footer-total-this-month{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: var(--DM-sans-font);
+    color: var(--medium-brown);
+}
+.footer-contents-right{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+.footer-contents-right span {
+    font-weight: var(--font-weight-700);
+    color: var(--dark-brown);
+}
+.footer-contents-left h1 {
+    font-weight: var(--font-weight-700);
+    color: var(--dark-brown);
+}
+.graph-area{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.days{
+    box-sizing: border-box;
+    font-family: var(--DM-sans-font);
+    font-weight: var(--font-weight-700);
+    color: var(--medium-brown);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 17px;
+}
+.graph-area span:nth-child(2) .bars{
+    width: 50px;
+    height: 100px;
+}
+.graph-area span:nth-child(3) .bars{
+    width: 50px;
+    height: 150px;
+    background-color: var(--cyan);
+}
+.graph-area span:nth-child(4) .bars{
+    width: 50px;
+    height: 89px;
+}
+.graph-area span:nth-child(5) .bars{
+    width: 50px;
+    height: 67px;
+}
+.graph-area span:nth-child(6) .bars{
+    width: 50px;
+    height: 124px;
+}
+.graph-area span:nth-child(7) .bars{
+    width: 50px;
+    height: 73px;
+}
+.amount{
+    background-color: var(--dark-brown);
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+}
+.graph-area span:hover .amount{
+    opacity: 1;
+}
+.bars{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: var(--soft-red);
+}
+.bars:hover{
+    background-color: var(--very-pale-orange);
+    cursor: pointer;
+}
+.attribution{
+ text-align: center;
+ font-family: var(--DM-sans-font);
+}
+
+@media (max-width:500px){
+    .top-header{
+        width: 450px;
+        height: 124px;
+        
+    }
+    .graph-body{
+        width: 450px;
+        height: 511px;
+        
+    }
+    .graph-area span:nth-child(1) .bars{
+        width: 33px;
+    }
+    .graph-area span:nth-child(2) .bars{
+        width: 33px;
+        height: 100px;
+    }
+    .graph-area span:nth-child(3) .bars{
+        width: 33px;
+        height: 150px;
+        background-color: var(--cyan);
+    }
+    .graph-area span:nth-child(4) .bars{
+        width: 33px;
+        height: 89px;
+    }
+    .graph-area span:nth-child(5) .bars{
+        width: 22px;
+        height: 67px;
+    }
+    .graph-area span:nth-child(6) .bars{
+        width: 33px;
+        height: 124px;
+    }
+    .graph-area span:nth-child(7) .bars{
+        width: 33px;
+        height: 73px;
+    }
+    .amount{
+        padding: 5px;
+    }
+    
+}
